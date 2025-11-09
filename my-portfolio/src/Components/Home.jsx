@@ -1,6 +1,6 @@
 import React from 'react';
 import './components.css';
-import moPicture from './SeriousMo.JPG';
+import moPicture from './luaghingMo2.JPG';
 
 function Home() {
   return (
