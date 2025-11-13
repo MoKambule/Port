@@ -17,7 +17,7 @@ function Home() {
           </p>
         </div>
         <div className="column" id="mypicture">
-          <img src={moPicture} alt="A picture of Mo"  />
+          <img src={moPicture} alt="APictureOfMo"  />
         </div>
       </div>
     </section>
