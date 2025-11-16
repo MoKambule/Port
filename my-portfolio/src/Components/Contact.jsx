@@ -8,13 +8,13 @@ function Contact() {
         <div className="contact-card">
           <h3>Get in Touch</h3>
           <p>
-            Feel free to reach out to me for collaboration, opportunities, or just to connect!
+            Feel free to reach out to me for collaboration,work opportunities, or just to connect!
           </p>
           <ul>
-            <li><strong>Email:</strong> mokgethwa@example.com</li>
-            <li><strong>Phone:</strong> +27 123 456 7890</li>
-            <li><strong>LinkedIn:</strong> linkedin.com/in/mokgethwa</li>
-            <li><strong>GitHub:</strong> github.com/mokgethwa</li>
+            <li><strong>Email:</strong> kambulemokgethwa@gmail.com</li>
+            <li><strong>Phone:</strong> +2760 415 8227</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kambule-mokgethwa/" target='_blank'>Kambule-Mokgethwa</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/MoKambule" target='_blank'>MoKambule</a></li>
           </ul>
         </div>
       </div>

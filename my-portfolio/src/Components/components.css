@@ -1,14 +1,37 @@
+/* ===== VA Colors ===== */
+:root {
+  --va-primary: #f9bfd8;   /* Pastel pink for cards, contact, nav */
+  --va-hover: #f6d7eb;     /* Grey for hover effects */
+  --va-background: #fff8f0; /* Light cream for whole page */
+  --va-text-dark: #333;     /* Dark text */
+  --va-text-light: #555;    /* Medium grey text */
+  --va-card-shadow: rgba(0,0,0,0.1);
+}
+
+/* ===== Page Background ===== */
+html, body {
+  background-color: var(--va-background);
+  color: var(--va-text-dark);
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ===== Navigation ===== */
+nav {
+  background-color: var(--va-primary);
+  color: var(--va-text-dark);
+  padding: 1rem 2rem;
+}
 
 /* ===== Home Section === */
-
 #home {
   min-height: 100vh;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  color: #f4f4f4;      
+  color: var(--va-text-dark);      
 }
 
 .row {
@@ -33,13 +56,13 @@
 #aboutme h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #f4f4f4;
+  color: var(--va-text-dark);
 }
 
 #aboutme p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #dcdcdc;
+  color: var(--va-text-light);
 }
 
 #mypicture {
@@ -53,13 +76,13 @@
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(221, 14, 149, 0.4);
+  box-shadow: 0 4px 20px rgba(244, 214, 219, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #mypicture img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 25px rgba(221, 14, 149, 0.6);
+  box-shadow: 0 6px 25px rgba(211, 211, 211, 0.6);
 }
 
 /* Responsive for smaller screens */
@@ -84,9 +107,7 @@
   }
 }
 
-
-/* ===== General Section ======= */
-
+/* ===== General Section ===== */
 #education {
   padding: 4rem 2rem;
   min-height: 100vh;
@@ -95,47 +116,52 @@
 
 #education h2 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--va-text-dark);
   margin-bottom: 2rem;
 }
 
 /* ======= Cards =============== */
-
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 10rem;
 }
 
-/* Certificate card container */
 .card {
-  background-color: #0b000b;
+  background-color: var(--va-primary);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(205, 47, 207, 0.4);
+  box-shadow: 0 4px 10px var(--va-card-shadow);
   width: 300px;
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: var(--va-text-dark);
 }
 
 .card:hover {
+  background-color: var(--va-hover);
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
-.card h3 {
+.card h3,h2 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  color: #e8dede;
+  color: var(--va-text-dark);
 }
+.card a {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: rgb(250, 74, 132);
+}
+
 
 .card p {
-  color: #f4f1f1;
   font-size: 0.95rem;
   line-height: 1.5;
+  color: var(--va-text-light);
 }
-
 
 .card img {
   width: 100%;
@@ -143,16 +169,15 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(205, 47, 207, 0.3);
+  box-shadow: 0 2px 8px var(--va-card-shadow);
 }
 
 /* ======= Skills Section ====== */
-
-
 #skills h1 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
+  color: var(--va-text-dark);
 }
 
 .skills-row {
@@ -165,21 +190,22 @@
 .skill-card {
   flex: 1 1 120px;
   max-width: 180px;
-  background-color: #1f021b;
+  background-color: var(--va-primary);
   padding: 1rem;
   text-align: center;
   border-radius: 8px;
   font-weight: bold;
-  color: #f4f1f1;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  color: var(--va-text-dark);
+  box-shadow: 0 2px 5px var(--va-card-shadow);
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .skill-card:hover {
+  background-color: var(--va-hover);
   transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+/* Important Skills */
 .cards-container-importantskill {
   display: flex;
   flex-wrap: wrap;
@@ -189,87 +215,70 @@
 }
 
 .importantskill {
-  background-color: #0b000b; /* Same dark base as .card */
+  background-color: var(--va-primary);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(205, 47, 207, 0.4);
+  box-shadow: 0 4px 10px var(--va-card-shadow);
   width: 300px;
   padding: 1.5rem;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #f4f1f1;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: var(--va-text-dark);
 }
 
 .importantskill:hover {
+  background-color: var(--va-hover);
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .importantskill h3 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  color: #e8dede;
+  color: var(--va-text-dark);
 }
 
 .importantskill p {
   font-size: 0.95rem;
   line-height: 1.5;
+  color: var(--va-text-light);
 }
 
-
-/* ===== Contact ======= */
-
-
+/* ===== Contact Section ===== */
 #contact {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 1rem 2rem ;
+  background-color: var(--va-hover);
+  color: var(--va-text-dark);
 }
 
 #contact h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: var(--va-text-dark);
 }
 
-.contact-card {
-  background-color: #060506; 
-  border-radius: 15px;
-  box-shadow: 0 0 8px rgba(192, 192, 192, 0.6); 
-  color: #f4f4f4;
-  padding: 2.5rem;
-  width: 80%;
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--va-text-light);
 }
 
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 10px rgba(192, 192, 192, 0.9);
-}
-
-.contact-card h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #dcdcdc;
-}
-
-.contact-card p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  color: #ddd;
-}
-
-.contact-card ul {
+#contact ul {
   list-style: none;
   padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact-card li {
-  margin-bottom: 0.8rem;
+#contact li {
   font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+  color: var(--va-text-dark);
+}
+#contact a {
+ 
+  color: rgb(250, 74, 132);
 }
 
-.contact-card strong {
-  color: #c0c0c0;
+#contact li strong {
+  color: var(--va-text-light);
 }
