@@ -18,7 +18,7 @@ function Projects() {
           </p>
 
         <h2>
-          <a href="https://molu-forecast.netlify.app/" target="_blank">Web react-link</a>
+          <a href="https://molu-forecast.netlify.app/" target="_blank" rel="noreferrer">Web react-link</a>
         </h2>
         </div>
 
@@ -30,7 +30,7 @@ function Projects() {
           
           </p>
           <h2>
-            <a href="https://molearn-todo-app.netlify.app/" target="_blank">web react-link</a>
+            <a href="https://molearn-todo-app.netlify.app/" target="_blank" rel="noreferrer">web react-link</a>
           </h2>
         </div>
 

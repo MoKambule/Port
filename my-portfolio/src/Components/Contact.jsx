@@ -13,8 +13,8 @@ function Contact() {
           <ul>
             <li><strong>Email:</strong> kambulemokgethwa@gmail.com</li>
             <li><strong>Phone:</strong> +2760 415 8227</li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kambule-mokgethwa/" target='_blank'>Kambule-Mokgethwa</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/MoKambule" target='_blank'>MoKambule</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kambule-mokgethwa/" target='_blank' rel="noreferrer">Kambule-Mokgethwa</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/MoKambule" target='_blank' rel="noreferrer">MoKambule</a></li>
           </ul>
         </div>
       </div>
